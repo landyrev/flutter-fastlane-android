@@ -11,3 +11,4 @@ RUN apt update
 RUN apt install -y ruby ruby-dev rubygems
 # Install fastlane.
 RUN gem install fastlane -NV
+ENV PATH="/usr/local/gradle-6.8.3/bin:${PATH}"
